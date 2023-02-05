@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>VJ Molina</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- encabezado y menú -->
+        <header>
+            <h1 class="gradient-text">VJ Molina</h1>
+            <nav id="nav">
+                <a href="#inicio" onclick="seleccionar()">Home</a>
+                <a href="#sobremi" onclick="seleccionar()" >About</a>
+                <a href="#curriculum" onclick="seleccionar()">Currículum</a>
+                <a href="#porfolio" onclick="seleccionar()">Porfolio</a>
+                <a href="#contacto" onclick="seleccionar()">Contact</a>
+            </nav>
+
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+        <!-- sección Inicio -->
+        <section id="inicio">
+            <div class="fila">
+                <div class="col">
+                    <p>I'm Victor Molina</p>
+                    <h1 class="gradient-text">Web Developer</h1>
+                    <button><a href="download/Victor-Molina.docx" download="CV Victor-Molina.docx" id="download">Download CV</a></button>
+                </div>
+                <div class="col">
+                    <div class="contenedor-img">
+                        <img src="img/vj.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sección Sobre Mí -->
+        <section id="sobremi">
+            <div class="fila">
+                <div class="col info">
+                    <h3>About Me</h2>
+                    <h2>I'm a web developer</h2>
+                    <p>With experience in the use of programming and layout tools such as HTML, CSS, JAVASCRIPT and REACT.JS framework, I consider myself a self-taught and proactive person.</p>
+                </div>
+                <div class="col">
+                    <div class="contenedor-img">
+                        <img src="img/p1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sección Curriculum -->
+        <section id="curriculum">
+            <h3>Currículum</h3>
+            <div class="fila">
+                <div class="col">
+                    <p class="experiencia">EXPERIENCE</p>
+                    <h2>More than 2 years of experience as <span class="txtEspecial">Web developer</span></h2>
+                </div>
+                <div class="col">
+                    <div class="info">
+                        <div class="item">
+                            <span class="circulo"></span>
+                            <h4>Intra Click</h4>
+                            <p>Web developer (2021-2021)</p>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sección porfolio -->
+        <section id="porfolio">
+            <h3>Porfolio</h3>
+            <div class="fila">
+                <div class="col">
+                    <div class="trabajo">
+                        <img src="img/diamond.jpeg" alt="">
+                        <p class="desc"><a href="https://dominicantransfersdiamond.com/" target="_blank" id="diamond"><i class="fa-solid fa-arrow-up-right-from-square"></i> Dominican </a></p>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <!-- sección contacto -->
+        <section id="contacto">
+            <h3>Skill Set</h3>
+            <div class="redes">
+                <img src="img/html5.svg" alt="html5" id="html-icon">
+                <img src="img/css.svg" alt="css" id="css-icon">
+                <img src="img/javascript.svg" alt="javascript" id="js-icon">
+                <img src="img/react.svg" alt="react" id="react-icon">
+                <img src="img/git.svg" alt="git" id="git-icon">
+
+            </div>
+            
+        </section>
+        <section id="contacto">
+            <h3>Contacto</h3>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100009831722711" target="_blank"><i class="fa-brands fa-square-facebook gradient-text"></i></i></a>
+                <a href="https://github.com/vjmolina2816" target="_blank"><i class="fa-brands fa-github gradient-text"></i></a>
+                <a href="https://www.instagram.com/victor.bennington/" target="_blank"><i class="fa-brands fa-square-instagram gradient-text"></i></a>
+                <a href="https://www.linkedin.com/in/victor-molina-web/"
+                target="_blank"><i class="fa-brands fa-linkedin gradient-text"></i></a>
+
+            </div>
+            
+        </section>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
